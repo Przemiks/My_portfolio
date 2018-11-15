@@ -1,0 +1,11 @@
+#home {
+    height: 55vh;
+    height: 55vh;
+    background-image: linear-gradient(to right bottom,
+        rgba($color-grey, 0.8),
+        rgba($color-prime, 0.8)),
+        url(../img/hero-small.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}

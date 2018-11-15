@@ -1,10 +1,10 @@
 {
-    "name": "travel",
+    "name": "portfolio",
     "version": "1.0.0",
-    "description": "Natours landing page",
+    "description": "My portfolio page",
     "main": "index.js",
     "scripts": {
-        "watch:sass": "node-sass sass/main.scss css/style.css -w",
+        "watch:sass": "node-sass -w sass/main.scss -o dist/css --recursive",
         "devserver": "live-server",
         "start": "npm-run-all --parallel devserver watch:sass",
         "compile:sass": "node-sass sass/main.scss css/style.comp.css",

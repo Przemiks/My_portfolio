@@ -5,32 +5,46 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <title>Welcome to my portfolio</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,700i" rel="stylesheet" />
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+         crossorigin="anonymous"
+      />
       <link rel="stylesheet" href="css/main.css" />
    </head>
    <body>
-      <header class="header">
-         <div class="nav__btn"></div>
+      <div class="navigation">
+         <div class="nav__btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+         </div>
 
          <menu class="nav">
             <div class="nav__foto"><div class="nav_portrait"></div></div>
             <ul class="nav__menu">
                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-			   <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
-			   <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
-			   <li class="nav__item"><a href="#contact" class="nav__link">How to reach me</a></li>
+               <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+               <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">How to reach me</a></li>
             </ul>
          </menu>
-	  </header>
-	  
-	  <main>
-		  <div id="home">
-			  <div class="home__logo-box"><img src="#" alt="Logo" class="home__logo"></div>
-			  <div class="home__text-box">
-				  <h1 class="heading-prime">Przemek <span class="heading-prime--sub">Jurkiewicz</span></h1>
-				  <h2 class="heading-second">Web developer, Programmer, Designer</h2>
-			  </div>
-		  </div>
-	  </main>
+      </div>
+      <header id="home" class="header">
+         <div class="header__logo-box"><img src="#" alt="Logo" class="header__logo" /></div>
+         <div class="header__text-box">
+            <h1 class="heading-prime">
+               <span class="heading-prime--main">Przemek </span> <span class="heading-prime--sub">Jurkiewicz</span>
+            </h1>
+            <h2 class="heading-second">Web developer, Programmer, Designer</h2>
+         </div>
+      </header>
+
+      <main></main>
+
+      <script src="js/main.js"></script>
    </body>
 </html>

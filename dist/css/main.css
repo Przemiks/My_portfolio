@@ -1,2 +1,114 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px); }
+  80% {
+    transform: translate(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100px); }
+  80% {
+    transform: translate(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
 body {
-  background-color: red; }
+  background-color: #dfe6e9;
+  color: #fff;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.heading-prime {
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s; }
+  .heading-prime--main {
+    font-size: 6rem; }
+  .heading-prime--sub {
+    color: #00b894;
+    font-size: 6.5rem; }
+
+.heading-second {
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  letter-spacing: 0.1rem;
+  animation-name: moveInBottom;
+  animation-duration: 2s; }
+
+.header {
+  height: 65vh;
+  background-image: linear-gradient(to right bottom, rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8)), url(../img/home.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 85vh, 0 100%);
+      height: 95vh; } }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.navigation {
+  position: fixed;
+  z-index: 100;
+  width: 100%; }
+
+.nav__menu {
+  list-style: none; }
+
+.nav__link {
+  text-decoration: none; }

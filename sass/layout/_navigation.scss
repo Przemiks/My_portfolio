@@ -1,0 +1,26 @@
+.navigation {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+    &.nav__btn {
+
+    }
+}
+
+.nav {
+
+    &__photo {}
+
+    &__portrait {}
+
+    &__menu {
+        list-style: none;
+    }
+
+    &__item {}
+
+    &__link {
+        text-decoration: none;
+    }
+}

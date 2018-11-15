@@ -1,0 +1,27 @@
+
+
+.heading-prime {
+   text-transform: uppercase;
+   backface-visibility: hidden;
+   margin-bottom: 1rem;
+   letter-spacing: 0.1rem;
+   animation-name: moveInLeft;
+   animation-duration: 2s;
+
+   &--main {
+      font-size: 6rem;
+   }
+
+   &--sub {
+      color: $third-color;
+      font-size: 6.5rem;
+   }
+}
+
+.heading-second {
+   font-size: 2rem;
+   padding: 0.2rem 1rem;
+   letter-spacing: 0.1rem;
+   animation-name: moveInBottom;
+   animation-duration: 2s;
+}

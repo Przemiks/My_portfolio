@@ -1,5 +1,3 @@
-
-
 .heading-prime {
    text-transform: uppercase;
    backface-visibility: hidden;
@@ -24,4 +22,16 @@
    letter-spacing: 0.1rem;
    animation-name: moveInBottom;
    animation-duration: 2s;
+}
+
+.heading-fourth {
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
+
+.heading-title {
+    text-transform: capitalize;
+    font-size: 4rem;
+    text-align: center;
 }

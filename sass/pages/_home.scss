@@ -1,0 +1,22 @@
+.skills {
+    background-color: $prime-color;
+    padding: 15rem 0;
+    margin-top: -15rem;
+    z-index: 1;   
+ }
+
+ .about {
+    padding: 8rem 0;
+    margin-top: -10rem;
+    background-image: linear-gradient(to right bottom,
+    rgba($grey-color, 0.7),
+    rgba($prime-color, 0.8)),
+    url(../img/home.jpeg);
+    background-size: cover;
+    transform: skewY(-5deg);
+
+    & > * {
+        transform: skewY(5deg);
+    }
+
+ }

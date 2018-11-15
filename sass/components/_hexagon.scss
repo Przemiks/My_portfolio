@@ -1,0 +1,58 @@
+.hexagon-container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 5rem auto;
+   padding: 0;
+   list-style: none;
+   justify-content: center;
+}
+
+.hexagon {
+   position: relative;
+   width: 15rem;
+   height: 8rem;
+   background-color: #16a085;
+   margin: 4.4rem 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      left: 0;
+      height: 0;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      top: -3.5rem;
+      border-bottom: 3.5rem solid #16a085;
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      left: 0;
+      height: 0;
+      border-left: 7.5rem solid transparent;
+      border-right: 7.5rem solid transparent;
+      bottom: -3.5rem;
+      border-top: 3.5rem solid #16a085;
+   }
+
+   &__heading {
+      position: absolute;
+      top: 0;
+      color: #fff;
+      font-size: 2.5rem;
+   }
+
+   &__icon {
+      position: absolute;
+      top: 50%;
+      font-size: 3.5rem;
+      color: #fff;
+   }
+}

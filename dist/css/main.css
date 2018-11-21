@@ -3,7 +3,7 @@
     opacity: 0;
     transform: translate(-100px); }
   80% {
-    transform: translate(30px); }
+    transform: translate(20px, 20px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -13,7 +13,7 @@
     opacity: 0;
     transform: translate(100px); }
   80% {
-    transform: translate(-20px); }
+    transform: translate(-20px, -20px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -47,7 +47,7 @@ html {
 
 body {
   background-color: #dfe6e9;
-  color: #fff;
+  color: #dfe6e9;
   height: 100%;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -61,14 +61,18 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 1rem;
-  letter-spacing: 0.1rem;
-  animation-name: moveInLeft;
-  animation-duration: 2s; }
+  letter-spacing: 0.1rem; }
   .heading-prime--main {
-    font-size: 6rem; }
+    display: block;
+    font-size: 6rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s; }
   .heading-prime--sub {
+    display: block;
     color: #00b894;
-    font-size: 6.5rem; }
+    font-size: 6.5rem;
+    animation-name: moveInRight;
+    animation-duration: 2s; }
 
 .heading-second {
   font-size: 2rem;
@@ -111,7 +115,10 @@ body {
   margin: 4.4rem 1rem;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: all 0.4s ease; }
+  .hexagon:hover {
+    transform: translateY(-3rem) scale(1.1); }
   .hexagon::before {
     content: "";
     position: absolute;
@@ -143,9 +150,61 @@ body {
     font-size: 3.5rem;
     color: #fff; }
 
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(45, 52, 54, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(45, 52, 54, 0.2); }
+
+.btn--green {
+  background-color: #00cec9;
+  color: #fff;
+  font-weight: 300; }
+  .btn--green::after {
+    background-color: #00cec9; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
+
+.btn--animate {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; }
+
+.btn__arrow {
+  font-size: 3rem;
+  font-weight: 700; }
+
 .header {
-  height: 75vh;
-  background-image: linear-gradient(to right bottom, rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8)), url(../img/home.jpeg);
+  height: 85vh;
+  background-image: linear-gradient(to right bottom, rgba(99, 110, 114, 0.8), rgba(45, 52, 54, 0.9)), url(../img/home.jpeg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -270,8 +329,36 @@ body {
 .about {
   padding: 8rem 0;
   margin-top: -10rem;
-  background-image: linear-gradient(to right bottom, rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8)), url(../img/home.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(30, 30, 30, 0.5)), url(../img/home.jpeg);
   background-size: cover;
   transform: skewY(-5deg); }
   .about > * {
     transform: skewY(5deg); }
+  .about__info {
+    width: 50%;
+    margin: 2rem; }
+  .about__text {
+    font-size: 2rem; }
+  .about__knowledge {
+    margin-top: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: 'list1 list2';
+    grid-template-columns: repeat(3, 2fr); }
+  .about__list {
+    list-style: none;
+    margin-left: 2rem; }
+  .about__item {
+    font-size: 2rem;
+    color: #00b894; }
+
+.resume {
+  background-color: #2d3436;
+  padding-top: 25rem;
+  padding-bottom: 10rem;
+  margin-top: -20rem;
+  text-align: center; }
+  .resume__paragraph {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0; }

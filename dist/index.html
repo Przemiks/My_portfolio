@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Welcome to my portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,700i" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -16,10 +15,11 @@
     <header id="home" class="header">
         <div class="header__logo-box"><img src="#" alt="Logo" class="header__logo" /></div>
         <div class="header__text-box">
-            <h1 class="heading-prime">
-                <span class="heading-prime--main">Przemek </span> <span class="heading-prime--sub">Jurkiewicz</span>
+            <h1 class="heading-1">
+                <span class="heading-1--main">Przemek </span>
+                <span class="heading-1--sub">Jurkiewicz</span>
             </h1>
-            <h2 class="heading-second">Web developer, Programmer, Designer</h2>
+            <h2 class="heading-2">Web developer, Programmer, Designer</h2>
         </div>
     </header>
     <div class="navigation">
@@ -53,50 +53,94 @@
                 </li>
             </ul>
         </nav>
-        <main>
-            <!-- Umiejętności -->
-            <section class="skills" id="skills">
-                <h2 class="underline heading-title">Skills</h2>
-                <ul class="hexagon-container">
-                    <li class="hexagon">
-                        <h4 class="hexagon__heading">HTML 5</h4>
-                        <i class="hexagon__icon fab fa-html5"></i>
-                    </li>
-                    <li class="hexagon">
-                        <h4 class="hexagon__heading">CSS 3</h4>
-                        <i class="hexagon__icon fab fa-css3"></i>
-                    </li>
-                    <li class="hexagon">
-                        <h4 class="hexagon__heading">JavaScript</h4>
-                        <i class="hexagon__icon fab fa-js-square"></i>
-                    </li>
-                    <li class="hexagon">
-                        <h4 class="hexagon__heading">jQuery</h4>
-                    </li>
-                    <li class="hexagon">
-                        <h4 class="hexagon__heading">Bootstrap 4</h4>
-                    </li>
-                    <li class="hexagon">
-                        <h4 class="hexagon__heading">Node.JS</h4>
-                        <i class="hexagon__icon fab fa-node-js"></i>
-                    </li>
-                </ul>
-            </section>
+    </div>
+    <main>
+        <!-- Umiejętności -->
+        <section class="skills" id="skills">
+            <h2 class="underline heading-title">Skills</h2>
+            <ul class="hexagon-container">
+                <li class="hexagon">
+                    <h4 class="hexagon__heading">HTML 5</h4>
+                    <i class="hexagon__icon fab fa-html5"></i>
+                </li>
+                <li class="hexagon">
+                    <h4 class="hexagon__heading">CSS 3</h4>
+                    <i class="hexagon__icon fab fa-css3"></i>
+                </li>
+                <li class="hexagon">
+                    <h4 class="hexagon__heading">JavaScript</h4>
+                    <i class="hexagon__icon fab fa-js-square"></i>
+                </li>
+                <li class="hexagon">
+                    <h4 class="hexagon__heading">jQuery</h4>
+                </li>
+                <li class="hexagon">
+                    <h4 class="hexagon__heading">Bootstrap 4</h4>
+                </li>
+                <li class="hexagon">
+                    <h4 class="hexagon__heading">Node.JS</h4>
+                    <i class="hexagon__icon fab fa-node-js"></i>
+                </li>
+            </ul>
+        </section>
 
-            <!--About-->
-            <section id="about" class="about">
-                    <h2 class="underline heading-title">About<span> Me</span></h2>
-                    <div class="about__info">
-                        <h3 class="about__heading">Biography</h3>
-                        <p class="about__text">Cześć nazywam się Przemek i od ponad roku uczę się szeroko pojętej tematyki front-endu.
-                                Programowaniem interesowałem się od zawsze, ale różne zbiegi okoliczności sprawiły że życie potoczyło się inaczej i nie mogłem kodować. Jako mąż i ojciec 2-ki małych dzieci musiałem skupić się na ich bezpieczeństwie finansowym.
-                                Teraz jednak robię to co kocham i poświęcam się temu bez reszty.</p>
+        <!--About-->
+        <section id="about" class="about">
+            <h2 class="underline heading-title">About<span> Me</span></h2>
+            <div class="about__info">
+                <p class="about__text">Cześć nazywam się Przemek i od ponad roku uczę się szeroko pojętej tematyki
+                    front-endu.
+                    Programowaniem interesowałem się od zawsze, ale różne zbiegi okoliczności sprawiły że życie
+                    potoczyło się inaczej i nie mogłem kodować. Jako mąż i ojciec 2-ki małych dzieci musiałem
+                    skupić się na ich wychowaniu bezpieczeństwie.
+                    Teraz jednak robię to co kocham i poświęcam się temu bez reszty.
+                    Uwielbiam tworzyć strony i aplikacje internetowe, a w szczególności rozwiązywać powstałe przy
+                    kodowaniu problemy.</p>
+                <p class="about__text">Jako osoba bardzo ambitna nigdy się nie poddaję i potrafię szukać
+                    rozwiązania do skutku, co czasami gdy kładę się spać ok 2.00am denerwuję moją żonę.</p>
+
+                <div class="about__knowledge">
+                    <div class="about__box1">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <p class="about__paragraph">HTML - <span>90%</span></p>
+                            </li>
+                            <li class="about__item">
+                                <p class="about__paragraph">CSS - <span>70%</span></p>
+                            </li>
+                            <li class="about__item">
+                                <p class="about__paragraph">SASS - <span>70%</span></p>
+                            </li>
+                            <li class="about__item">
+                                <p class="about__paragraph">Bootstrap 4 - <span>80%</span></p>
+                            </li>
+                        </ul>
                     </div>
-                    
-                </section>
-        </main>
+                    <div class="about__box2">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <p class="about__paragraph">JavaScript - <span>60%</span></p>
+                            </li>
+                            <li class="about__item">
+                                <p class="about__paragraph">ES6 - <span>60%</span></p>
+                            </li>
+                            <li class="about__item">
+                                <p class="about__paragraph">React - <span>50%</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script src="js/main.js"></script>
+        <section class="resume" id="resume">
+            <h2 class="underline heading-title">Resume</h2>
+            <p class="resume__paragraph">Here You can see and download my resume:</p>
+            <div class="button"><a href="#" class="btn btn--green">Resume &rArr;</a></div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

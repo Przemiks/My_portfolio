@@ -1,8 +1,8 @@
 .header {
-    height: 75vh;
+    height: 85vh;
     background-image: linear-gradient(to right bottom,
-        rgba($grey-color, 0.7),
-        rgba($prime-color, 0.8)),
+        rgba($grey-color, .8),
+        rgba($prime-color, .9)),
         url(../img/home.jpeg);
     background-size: cover;
     background-position: top;

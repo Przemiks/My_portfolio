@@ -9,8 +9,8 @@
     padding: 8rem 0;
     margin-top: -10rem;
     background-image: linear-gradient(to right bottom,
-    rgba($grey-color, 0.7),
-    rgba($prime-color, 0.8)),
+    rgba(#000, .6),
+    rgba(#1e1e1e, 0.5)),
     url(../img/home.jpeg);
     background-size: cover;
     transform: skewY(-5deg);
@@ -19,4 +19,46 @@
         transform: skewY(5deg);
     }
 
+    &__info{
+        width: 50%;
+        margin: 2rem;
+    }
+
+    &__text{
+        font-size: 2rem;
+    }
+
+    &__knowledge {
+        margin-top: 2rem;
+        display: grid;
+        grid-gap: 2rem;  // spacing
+        grid-template-areas:
+        'list1 list2';
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    &__list {
+        list-style: none;
+        margin-left: 2rem;
+    }
+
+    &__item {
+        font-size: 2rem;
+        color: $third-color;
+    }
+
+ }
+
+ .resume {
+    background-color: $prime-color;
+    padding-top: 25rem;
+    padding-bottom: 10rem;
+    margin-top: -20rem;
+    text-align: center;
+
+    &__paragraph {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
  }
